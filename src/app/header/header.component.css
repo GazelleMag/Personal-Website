@@ -1,4 +1,10 @@
-.jumbotron.jumbotron-fluid
+.jumbotron
 {
   margin: 0;
+  background-color: #f8f9fa;
+  padding: 0;
+  height: 100px;
 }
+
+
+
