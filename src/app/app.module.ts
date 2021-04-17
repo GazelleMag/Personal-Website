@@ -7,13 +7,15 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     HomeComponent,
-    AboutMeComponent
+    AboutMeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
