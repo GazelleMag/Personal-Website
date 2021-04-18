@@ -2,3 +2,16 @@
 {
   padding: 40px 0 40px 0;
 }
+
+img
+{
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+}
+
+#home_message p
+{
+  margin-top: 16px;
+  text-align: center;
+}
