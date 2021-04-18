@@ -12,3 +12,16 @@ body
   font-weight: lighter;
 }
 
+.content-container
+{
+  min-height: 60vh;
+  margin: 0;
+  padding: 0;
+}
+
+.row
+{
+  margin: 0;
+  padding: 0;
+}
+

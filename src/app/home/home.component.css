@@ -1,8 +1,3 @@
-.container-fluid
-{
-  padding: 40px 0 40px 0;
-}
-
 img
 {
   width: 10%;
@@ -10,8 +5,13 @@ img
   border-radius: 50%;
 }
 
-#home_message p
+#my_image
 {
-  margin-top: 16px;
+  margin-top: 48px;
+}
+
+#home_message
+{
+  margin-top: 32px;
   text-align: center;
 }
