@@ -1,5 +1,21 @@
+nav
+{
+  display: block;
+  text-align: center;
+}
+
+.navbar
+{
+  padding: 12px 8px 12px 8px;
+}
+
 a.nav-link 
 {
   margin: 0 20px 0 20px;
+}
+
+button.navbar-toggler
+{
+  padding: 8px 8px 8px 8px;
 }
 

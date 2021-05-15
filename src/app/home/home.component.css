@@ -1,12 +1,16 @@
 img
 {
-  width: 10%;
-  height: 10%;
+  width: 15%;
+  height: 15%;
   border-radius: 50%;
+}
+
+#avatar_col
+{
+  text-align: center;
 }
 
 #home_message
 {
-  margin-top: 32px;
   text-align: center;
 }
