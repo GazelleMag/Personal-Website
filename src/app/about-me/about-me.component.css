@@ -1,9 +1,21 @@
-.about-me-container {
+.about-container {
   height: 65vh;
 }
 
-.about-me-container .row {
+.about-container .row {
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.about-container .row > * {
+  text-align: center;
+}
+
+.about-header-col {
+  height: 10%;
+}
+
+.about-text-col {
+  height: 60%;
 }
