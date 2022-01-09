@@ -1,79 +1,81 @@
-.footer
-{
-  height: 100%;
+.footer-container {
+  height: 10vh;
 }
 
-#trademark
-{
+#trademark {
+  margin-bottom: 0px;
   font-size: 12.5px;
 }
 
-/* Social buttons */
-a, a:hover {
-	color: #FFF;
-	text-decoration: none;
-	padding: 5px;
+a,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
 }
 
-.social-buttons, .social-buttons ul, .social-buttons li {
-	margin: 0;
-	padding: 5px;
+.social-buttons-row, .trademark-row {
+  height: 50%;
 }
 
-.social-buttons li {
-    list-style: none outside none;
-    display: inline-block;
+.social-buttons-row {
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.social-buttons li {
-    list-style: none outside none;
-    display: inline-block;
+.trademark-row {
+  align-items: flex-start;
+  justify-content: center;
 }
 
-.social-buttons .fa {
-	color: #000;
-	text-shadow: 1px 1px 0px #FFF,
-			1px -1px 0px #FFF,
-			-1px 1px 0px #FFF,
-			-1px -1px 0px #FFF;
-	-webkit-text-shadow: 1px 1px 0px #FFF,
-			1px -1px 0px #FFF,
-			-1px 1px 0px #FFF,
-			-1px -1px 0px #FFF;
-	-moz-text-shadow: 1px 1px 0px #FFF,
-			1px -1px 0px #FFF,
-			-1px 1px 0px #FFF,
-			-1px -1px 0px #FFF;
-	-o-text-shadow: 1px 1px 0px #FFF,
-			1px -1px 0px #FFF,
-			-1px 1px 0px #FFF,
-			-1px -1px 0px #FFF;
-	transition: all ease-out 0.5s;
-	-moz-transition: all ease-out 0.5s;
-	-webkit-transition: all ease-out 0.5s;
-	-o-transition: all ease-out 0.5s;
+.social-buttons-row .col-12,
+.trademark-row .col-12 {
+  text-align: center;
 }
 
-.social-buttons .fa:hover {
-	color: #FFF;
-	text-shadow: 1px 1px 0px #000,
-			1px -1px 0px #000,
-			-1px 1px 0px #000,
-			-1px -1px 0px #000;
-	-webkit-text-shadow: 1px 1px 0px #000,
-			1px -1px 0px #000,
-			-1px 1px 0px #000,
-			-1px -1px 0px #000;
-	-moz-text-shadow: 1px 1px 0px #000,
-			1px -1px 0px #000,
-			-1px 1px 0px #000,
-			-1px -1px 0px #000;
-	-o-text-shadow: 1px 1px 0px #000,
-			1px -1px 0px #000,
-			-1px 1px 0px #000,
-			-1px -1px 0px #000;
-	transition: all ease 0.5s;
-	-moz-transition: all ease-in 0.5s;
-	-webkit-transition: all ease-in 0.5s;
-	-o-transition: all ease-in 0.5s;
+.social-buttons-row .col-12 ul {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+.social-buttons-row .col-12 li {
+  list-style: none outside none;
+  display: inline-block;
+}
+
+.social-buttons-row .col-12 li {
+  list-style: none outside none;
+  display: inline-block;
+}
+
+.social-buttons-row .col-12 .fa {
+  color: #000;
+  text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  -webkit-text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  -moz-text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  -o-text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
+    -1px -1px 0px #fff;
+  transition: all ease-out 0.5s;
+  -moz-transition: all ease-out 0.5s;
+  -webkit-transition: all ease-out 0.5s;
+  -o-transition: all ease-out 0.5s;
+}
+
+.social-buttons-row .col-12 .fa:hover {
+  color: #fff;
+  text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
+    -1px -1px 0px #000;
+  -webkit-text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
+    -1px -1px 0px #000;
+  -moz-text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
+    -1px -1px 0px #000;
+  -o-text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
+    -1px -1px 0px #000;
+  transition: all ease 0.5s;
+  -moz-transition: all ease-in 0.5s;
+  -webkit-transition: all ease-in 0.5s;
+  -o-transition: all ease-in 0.5s;
 }

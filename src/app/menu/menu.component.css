@@ -1,21 +1,29 @@
-nav
-{
+.menu-container {
+  height: 15vh;
+}
+
+.menu-container .row {
+  height: 100%;
+}
+
+nav {
+  height: 100%;
   display: block;
   text-align: center;
 }
 
-.navbar
-{
-  padding: 12px 8px 12px 8px;
+.navbar {
+  padding: 0px;
 }
 
-a.nav-link 
-{
+#navbarSupportedContent {
+  height: 100%;
+}
+
+a.nav-link {
   margin: 0 20px 0 20px;
 }
 
-button.navbar-toggler
-{
+button.navbar-toggler {
   padding: 8px 8px 8px 8px;
 }
-

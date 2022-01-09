@@ -1,5 +1,9 @@
-#header_row
-{
+.header-container {
+  height: 10vh;
+}
+
+.header-container .row {
+  height: 100%;
   text-align: center;
 }
 

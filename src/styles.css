@@ -2,10 +2,12 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 
-/*html, body
+html, body
 {
   height: 100%;
-}*/
+  margin: 0px;
+  padding: 0px;
+}
 
 body
 {
@@ -16,11 +18,4 @@ body
 .lighter-font
 {
   font-weight: lighter;
-}
-
-.content-container
-{
-  min-height: 55vh;
-  margin: 48px 0 0 0;
-  padding: 0;
 }

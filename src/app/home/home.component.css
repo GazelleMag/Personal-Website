@@ -1,3 +1,11 @@
+.home-container {
+  height: 65vh;
+}
+
+.home-container .row {
+  height: 100%;
+}
+
 img
 {
   width: 15%;
