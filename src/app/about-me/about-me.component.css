@@ -1,0 +1,9 @@
+.about-me-container {
+  height: 65vh;
+}
+
+.about-me-container .row {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}

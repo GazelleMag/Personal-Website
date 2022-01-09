@@ -3,7 +3,9 @@
 }
 
 .home-container .row {
-  height: 100%;
+  height: 75%;
+  align-items: center;
+  justify-content: center;
 }
 
 img
@@ -18,7 +20,10 @@ img
   text-align: center;
 }
 
-#home_message
-{
+.introduction-col > *  {
   text-align: center;
+}
+
+.introduction-col p:first-of-type {
+  font-size: 25px;
 }
