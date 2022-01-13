@@ -1,54 +1,30 @@
-.footer-container {
-  height: 10vh;
-}
-
-#trademark {
-  margin-bottom: 0px;
-  font-size: 12.5px;
-}
-
-a,
-a:hover {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px;
-}
-
-.social-buttons-row, .trademark-row {
-  height: 50%;
-}
-
-.social-buttons-row {
+.footer-row {
+  /*min-height: 15%;*/
   align-items: flex-end;
   justify-content: center;
 }
 
-.trademark-row {
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.social-buttons-row .col-12,
+.footer-row .col-12,
 .trademark-row .col-12 {
   text-align: center;
 }
 
-.social-buttons-row .col-12 ul {
+.footer-row .col-12 ul {
   padding: 0px;
   margin-bottom: 0px;
 }
 
-.social-buttons-row .col-12 li {
+.footer-row .col-12 li {
   list-style: none outside none;
   display: inline-block;
 }
 
-.social-buttons-row .col-12 li {
+.footer-row .col-12 li {
   list-style: none outside none;
   display: inline-block;
 }
 
-.social-buttons-row .col-12 .fa {
+.footer-row .col-12 .fa {
   color: #000;
   text-shadow: 1px 1px 0px #fff, 1px -1px 0px #fff, -1px 1px 0px #fff,
     -1px -1px 0px #fff;
@@ -64,7 +40,7 @@ a:hover {
   -o-transition: all ease-out 0.5s;
 }
 
-.social-buttons-row .col-12 .fa:hover {
+.footer-row .col-12 .fa:hover {
   color: #fff;
   text-shadow: 1px 1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000,
     -1px -1px 0px #000;
@@ -78,4 +54,21 @@ a:hover {
   -moz-transition: all ease-in 0.5s;
   -webkit-transition: all ease-in 0.5s;
   -o-transition: all ease-in 0.5s;
+}
+
+.trademark-row {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#trademark {
+  margin-bottom: 0px;
+  font-size: 12.5px;
+}
+
+a,
+a:hover {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
 }

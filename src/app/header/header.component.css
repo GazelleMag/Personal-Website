@@ -1,12 +1,7 @@
-.header-container {
-  height: 10vh;
-}
-
-.header-container .row {
-  height: 100%;
-  text-align: center;
+.header-row {
+  min-height: 10%;
   align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 

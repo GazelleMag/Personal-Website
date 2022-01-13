@@ -1,29 +1,10 @@
-.menu-container {
-  height: 15vh;
-}
-
-.menu-container .row {
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
 nav {
-  height: 100%;
-  display: block;
   text-align: center;
 }
 
 .navbar {
+  display: block;
   padding: 0px;
-}
-
-#navbarSupportedContent {
-  height: 100%;
-}
-
-a.nav-link {
-  margin: 0 20px 0 20px;
 }
 
 button.navbar-toggler {

@@ -1,21 +1,5 @@
-.about-container {
-  height: 65vh;
-}
-
-.about-container .row {
-  height: 100%;
+.about-me-row {
+  min-height: 78%;
   align-items: center;
-  justify-content: center;
-}
-
-.about-container .row > * {
   text-align: center;
-}
-
-.about-header-col {
-  height: 10%;
-}
-
-.about-text-col {
-  height: 60%;
 }

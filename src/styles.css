@@ -15,6 +15,10 @@ body
   background-color: #f8f9fa;
 }
 
+.main-container {
+  height: 100%;
+}
+
 .lighter-font
 {
   font-weight: lighter;
