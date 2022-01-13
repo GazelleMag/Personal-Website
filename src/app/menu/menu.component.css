@@ -10,3 +10,8 @@ nav {
 button.navbar-toggler {
   padding: 8px 8px 8px 8px;
 }
+
+.nav-item {
+  margin-left: 25px;
+  margin-right: 25px;
+}
