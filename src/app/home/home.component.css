@@ -3,6 +3,15 @@
   text-align: center;
 }
 
+.avatar-row {
+  align-items: center;
+  margin-top: 50px;
+}
+
+.introduction-row {
+  margin-top: 25px;
+}
+
 img {
   border-radius: 50%;
 }
