@@ -1,0 +1,56 @@
+.portfolio-row {
+  min-height: 76%;
+  text-align: center;
+}
+
+.portfolio-header {
+  height: auto;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.project-card {
+  height: 200px;
+  width: 250px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.project-image {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.project-card:hover .project-image {
+  opacity: 0.3;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.details-button {
+  width: 110px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.download-button {
+  width: 110px;
+  height: 40px;
+  margin-top: 5px;
+}
