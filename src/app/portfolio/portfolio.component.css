@@ -1,17 +1,11 @@
 .portfolio-row {
   min-height: 76%;
   text-align: center;
-}
-
-.portfolio-header {
-  height: auto;
-  align-items: center;
   word-wrap: break-word;
 }
 
 .project-card {
   height: 200px;
-  width: 250px;
   border: 1px solid black;
   overflow: hidden;
 }

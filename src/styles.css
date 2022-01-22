@@ -19,6 +19,7 @@ body
 
 .main-container {
   height: 100%;
+  overflow: auto;
 }
 
 .lighter-font
