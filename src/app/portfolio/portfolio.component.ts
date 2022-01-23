@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ProjectDetailsModalComponent } from './project-details-modal/project-details-modal.component';
 
 @Component({
   selector: 'app-portfolio',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortfolioComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+  }
+
+  openProjectDetailsModal() {
+    const modalRef = this.modalService.open(ProjectDetailsModalComponent);
+    //modalRef.componentInstance.name = 'World';
   }
 
 }
