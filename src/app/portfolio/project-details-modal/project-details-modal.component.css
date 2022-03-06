@@ -1,0 +1,27 @@
+.details-modal {
+  height: 350px;
+  padding: 20px 20px;
+}
+
+.content-row {
+  height: 80%;
+}
+
+.actions-row {
+  height: 20%;
+  align-items: end;
+  text-align: center;
+}
+
+.project-title {
+  margin-bottom: 15px;
+}
+
+.badge.badge-dark {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+p {
+  margin-left: 2px;
+}

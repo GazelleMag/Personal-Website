@@ -9,11 +9,17 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class ProjectDetailsModalComponent implements OnInit {
 
   @Input() projectId;
+  @Input() projectTitle;
   @Input() projectDetails;
+  @Input() projectTechnologies
 
   constructor(public activeModal: NgbActiveModal) { }
 
   ngOnInit(): void {
+  }
+
+  closeProjectDetailsModal() {
+    this.activeModal.close();
   }
 
 }

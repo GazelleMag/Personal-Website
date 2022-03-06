@@ -1,2 +1,16 @@
-<p>Project ID: {{projectId}}</p>
-<p>Details: {{projectDetails}}</p>
+<div class="container-fluid details-modal">
+  <div class="row content-row">
+    <div class="col-12">
+      <h2 class="project-title">{{projectTitle}}</h2>
+      <span class="badge badge-dark">Details</span>
+      <p>{{projectDetails}}</p>
+      <span class="badge badge-dark">Technologies</span>
+      <p>{{projectTechnologies}}</p>
+    </div>
+  </div>
+  <div class="row actions-row">
+    <div class="col-12">
+      <button type="button" class="btn btn-dark" (click)="closeProjectDetailsModal();">Close</button>
+    </div>
+  </div>
+</div>
