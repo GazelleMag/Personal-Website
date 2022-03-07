@@ -15,25 +15,29 @@ export class PortfolioComponent implements OnInit {
       title: 'PuntsPats',
       details: 'Developed a 2D top down shooter. The player must defeat incoming enemies and survive as much time as possible.' +
         ' The goal was to make a very simple game, so I could improve my way around the Unity game engine.',
-      technologies: 'Unity and C#.'
+      technologies: 'Unity and C#.',
+      inProgress: false
     },
     {
       id: 2,
       title: 'Disarray',
       details: 'this is the details for game development project 2',
-      technologies: ''
+      technologies: '',
+      inProgress: true
     },
     {
       id: 3,
       title: 'Personal Website',
       details: 'this is the details for web development project 3',
       technologies: '',
+      inProgress: true
     },
     {
       id: 4,
       title: 'Sample Website',
       details: 'this is the details for web development project 4',
-      technologies: ''
+      technologies: '',
+      inProgress: true
     }
   ];
 
@@ -49,14 +53,19 @@ export class PortfolioComponent implements OnInit {
       size: 'md'
     });
 
-    modalRef.componentInstance.projectId = project.id;
-    modalRef.componentInstance.projectTitle = project.title;
-    modalRef.componentInstance.projectDetails = project.details;
-    modalRef.componentInstance.projectTechnologies = project.technologies;
+    this.sendProjectDataToModal(project, modalRef);
   }
 
   getProjectDetails(projectId) {
     return this.projects.find(project => project.id === projectId);
+  }
+
+  sendProjectDataToModal(project, modalRef) {
+    modalRef.componentInstance.projectId = project.id;
+    modalRef.componentInstance.projectTitle = project.title;
+    modalRef.componentInstance.projectDetails = project.details;
+    modalRef.componentInstance.projectTechnologies = project.technologies;
+    modalRef.componentInstance.projectInProgress = project.inProgress;
   }
 
 }

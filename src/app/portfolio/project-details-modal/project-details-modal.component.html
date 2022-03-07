@@ -1,7 +1,12 @@
 <div class="container-fluid details-modal">
-  <div class="row content-row">
+  <div class="row header-row">
     <div class="col-12">
       <h2 class="project-title">{{projectTitle}}</h2>
+      <span class="badge badge-success" *ngIf="projectInProgress">In Progress</span>
+    </div>
+  </div>
+  <div class="row content-row">
+    <div class="col-12">
       <span class="badge badge-dark">Details</span>
       <p>{{projectDetails}}</p>
       <span class="badge badge-dark">Technologies</span>

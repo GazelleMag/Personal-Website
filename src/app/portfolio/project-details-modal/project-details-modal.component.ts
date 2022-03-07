@@ -11,11 +11,13 @@ export class ProjectDetailsModalComponent implements OnInit {
   @Input() projectId;
   @Input() projectTitle;
   @Input() projectDetails;
-  @Input() projectTechnologies
+  @Input() projectTechnologies;
+  @Input() projectInProgress;
 
   constructor(public activeModal: NgbActiveModal) { }
 
   ngOnInit(): void {
+    console.log(this.projectInProgress);
   }
 
   closeProjectDetailsModal() {

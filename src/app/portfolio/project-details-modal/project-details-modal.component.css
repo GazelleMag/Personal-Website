@@ -3,22 +3,32 @@
   padding: 20px 20px;
 }
 
+.header-row {
+  height: auto;
+}
+
 .content-row {
-  height: 80%;
+  height: 65%;
 }
 
 .actions-row {
-  height: 20%;
+  height: auto;
   align-items: end;
   text-align: center;
 }
 
 .project-title {
+  display: inline-block;
+  margin-right: 10px;
   margin-bottom: 15px;
 }
 
 .badge.badge-dark {
   margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.badge.badge-success {
   font-size: 15px;
 }
 

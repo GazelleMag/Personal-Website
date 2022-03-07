@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -10,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ProjectDetailsModalComponent } from './portfolio/project-details-modal/project-details-modal.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
@@ -20,10 +22,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AboutMeComponent,
     HeaderComponent,
     FooterComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ProjectDetailsModalComponent
   ],
   imports: [
     BrowserModule,
+    CommonModule,
     AppRoutingModule,
     NgbModule
   ],
