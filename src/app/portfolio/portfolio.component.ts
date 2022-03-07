@@ -14,7 +14,7 @@ export class PortfolioComponent implements OnInit {
       id: 1,
       title: 'PuntsPats',
       details: 'Developed a 2D top down shooter. The player must defeat incoming enemies and survive as much time as possible.' +
-        ' The Goal was to make a very simple game, so I could improve my way around the Unity game engine.',
+        ' The goal was to make a very simple game, so I could improve my way around the Unity game engine.',
       technologies: 'Unity and C#.'
     },
     {
