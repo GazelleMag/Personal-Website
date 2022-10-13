@@ -5,6 +5,9 @@
 
 img {
   border-radius: 50%;
+  width: 70%;
+  height: auto;
+  max-width: 225px;
 }
 
 #avatar_col {
