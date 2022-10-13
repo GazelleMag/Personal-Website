@@ -7,6 +7,10 @@ nav {
   padding: 0px;
 }
 
+/* ul {
+  position: absolute;
+} */
+
 button.navbar-toggler {
   padding: 8px 8px 8px 8px;
 }

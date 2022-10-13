@@ -1,15 +1,12 @@
 .home-row {
-  min-height: 76%;
+  /* height: 75%; */
   text-align: center;
-}
-
-.avatar-row {
   align-items: center;
-  margin-top: 50px;
 }
 
 .introduction-row {
-  margin-top: 25px;
+  margin-top: 70px;
+  text-align: center;
 }
 
 img {

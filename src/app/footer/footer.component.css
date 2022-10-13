@@ -1,12 +1,7 @@
 .footer-row {
   align-items: flex-end;
-  justify-content: center;
   text-align: center;
-}
-
-.footer-row .col-12,
-.trademark-row .col-12 {
-  text-align: center;
+  /* height: auto; */
 }
 
 .footer-row .col-12 ul {

@@ -1,8 +1,4 @@
 .about-me-row {
-  min-height: 76%;
   text-align: center;
-}
-
-.about-me-header-row {
-  margin-top: 100px;
+  align-items: center;
 }
