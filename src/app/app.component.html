@@ -1,8 +1,8 @@
 <div class="container-fluid h-100 main-container">
-  <div class="row h-100" style="overflow-y: auto;">
+  <div class="row h-100 main-row">
     <div class="col-12">
-      <div class="h-100 d-flex flex-column">
-        <div class="row justify-content-center header-row">
+      <div class="h-100 content-container">
+        <div class="row header-row">
           <div class="col-12">
             <app-header></app-header>
           </div>
@@ -12,12 +12,12 @@
             <app-menu></app-menu>
           </div>
         </div>
-        <div class="row justify-content-center flex-grow-1">
+        <div class="row main-content-row">
           <div class="col-12">
             <router-outlet></router-outlet>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row footer-row">
           <div class="col-12">
             <app-footer></app-footer>
           </div>
