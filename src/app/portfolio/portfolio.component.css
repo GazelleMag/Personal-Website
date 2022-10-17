@@ -3,6 +3,17 @@
   word-wrap: break-word;
 }
 
+@media screen and (min-width: 992px) {
+  .portfolio-row {
+    margin-bottom: 150px;
+  }
+}
+
+.project-group-title {
+  margin: 24px 0px 24px 0px;
+  white-space: nowrap;
+}
+
 .project-card {
   height: 200px;
   overflow: hidden;
