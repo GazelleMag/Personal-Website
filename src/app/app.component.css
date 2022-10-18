@@ -13,6 +13,10 @@
   align-items: center;
 }
 
+.header-col {
+  margin: 12px 0px 12px 0px;
+}
+
 .main-content-row {
   align-items: center;
   justify-content: center;
