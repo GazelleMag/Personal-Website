@@ -16,28 +16,32 @@ export class PortfolioComponent implements OnInit {
       details: 'Developed a 2D top down shooter. The player must defeat incoming enemies and survive as much time as possible.' +
         ' The goal was to make a very simple game, so I could improve my way around the Unity game engine.',
       technologies: 'Unity and C#.',
-      inProgress: false
+      inProgress: false,
+      github: 'PuntsPats'
     },
     {
       id: 2,
       title: 'Disarray',
       details: 'this is the details for game development project 2',
       technologies: '',
-      inProgress: true
+      inProgress: true,
+      github: 'Disarray'
     },
     {
       id: 3,
       title: 'Personal Website',
       details: 'this is the details for web development project 3',
       technologies: '',
-      inProgress: true
+      inProgress: true,
+      github: 'Personal-Website'
     },
     {
       id: 4,
       title: 'Sample Website',
       details: 'this is the details for web development project 4',
       technologies: '',
-      inProgress: true
+      inProgress: true,
+      github: undefined
     }
   ];
 
@@ -66,6 +70,7 @@ export class PortfolioComponent implements OnInit {
     modalRef.componentInstance.projectDetails = project.details;
     modalRef.componentInstance.projectTechnologies = project.technologies;
     modalRef.componentInstance.projectInProgress = project.inProgress;
+    modalRef.componentInstance.projectGithub = project.github;
   }
 
 }

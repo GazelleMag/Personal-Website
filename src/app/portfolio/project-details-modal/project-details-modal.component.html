@@ -1,11 +1,11 @@
 <div class="container-fluid details-modal">
-  <div class="row header-row">
+  <div class="row">
     <div class="col-12">
-      <h2 class="project-title">{{projectTitle}}</h2>
+      <h2>{{projectTitle}}</h2>
       <span class="badge badge-success" *ngIf="projectInProgress">In Progress</span>
     </div>
   </div>
-  <div class="row content-row">
+  <div class="row">
     <div class="col-12">
       <span class="badge badge-dark">Details</span>
       <p>{{projectDetails}}</p>
@@ -13,9 +13,13 @@
       <p>{{projectTechnologies}}</p>
     </div>
   </div>
-  <div class="row actions-row">
-    <div class="col-12">
-      <button type="button" class="btn btn-dark" (click)="closeProjectDetailsModal();">Close</button>
+  <div class="row">
+    <div class="col-6 github-button-col">
+      <a [href]="'https://github.com/GazelleMag/' + projectGithub" class="btn btn-dark fa fa-lg fa-github github-button"
+        target="_blank"></a>
+    </div>
+    <div class="col-6 close-button-col">
+      <button type="button" class="btn btn-dark close-button" (click)="closeProjectDetailsModal();">Close</button>
     </div>
   </div>
 </div>
