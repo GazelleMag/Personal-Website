@@ -2,13 +2,12 @@
   overflow-y: auto;
 }
 
-.content-container {
+.main-container {
   display: flex;
   flex-direction: column;
 }
 
 .header-row {
-  /* height: 10%; */
   text-align: center;
   align-items: center;
 }
@@ -21,10 +20,10 @@
   align-items: center;
   justify-content: center;
   flex: 1;
+  overflow-y: auto;
 }
 
 .footer-row {
   justify-content: center;
   align-items: center;
-  position: sticky;
 }

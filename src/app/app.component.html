@@ -1,28 +1,22 @@
 <div class="container-fluid h-100 main-container">
-  <div class="row h-100 main-row">
+  <div class="row header-row">
+    <div class="col-12 header-col">
+      <app-header></app-header>
+    </div>
+  </div>
+  <div class="row justify-content-center">
     <div class="col-12">
-      <div class="h-100 content-container">
-        <div class="row header-row">
-          <div class="col-12 header-col">
-            <app-header></app-header>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-12">
-            <app-menu></app-menu>
-          </div>
-        </div>
-        <div class="row main-content-row">
-          <div class="col-12">
-            <router-outlet></router-outlet>
-          </div>
-        </div>
-        <div class="row footer-row">
-          <div class="col-12">
-            <app-footer></app-footer>
-          </div>
-        </div>
-      </div>
+      <app-menu></app-menu>
+    </div>
+  </div>
+  <div class="row main-content-row">
+    <div class="col-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="row footer-row">
+    <div class="col-12">
+      <app-footer></app-footer>
     </div>
   </div>
 </div>
