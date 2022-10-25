@@ -22,17 +22,19 @@ export class PortfolioComponent implements OnInit {
     {
       id: 2,
       title: 'Disarray',
-      details: 'this is the details for game development project 2',
-      technologies: '',
+      details: 'Developing a 3D fighting multiplayer game where a player can host or join a server in order to play against another' +
+      ' player. On the first version, players fight each other one against one in a martial arts manner (combat system), until one is defeated.' +
+      ' This project is also introducing me to network development.',
+      technologies: 'Unity, C# and Mirror.',
       inProgress: true,
       github: 'Disarray'
     },
     {
       id: 3,
       title: 'Personal Website',
-      details: 'this is the details for web development project 3',
-      technologies: '',
-      inProgress: true,
+      details: 'Developed my personal website that serves the purpose of promoting myself and my portfolio in a casual way.',
+      technologies: 'HTML & CSS, Bootstrap, Angular and Firebase',
+      inProgress: false,
       github: 'Personal-Website'
     },
     {

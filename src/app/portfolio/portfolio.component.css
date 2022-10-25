@@ -9,6 +9,10 @@
   }
 }
 
+.web-development-row {
+  justify-content: center;
+}
+
 .project-group-title {
   margin: 24px 0px 24px 0px;
   white-space: nowrap;
