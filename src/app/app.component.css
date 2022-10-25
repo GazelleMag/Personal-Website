@@ -16,8 +16,7 @@
 .main-content-row {
   align-items: center;
   justify-content: center;
-  flex: 1;
-  /* overflow-y: auto; */
+  /* flex: 1; */
 }
 
 .footer-row {
