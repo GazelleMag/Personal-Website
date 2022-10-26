@@ -1,7 +1,7 @@
 .main-container {
   display: flex;
   flex-direction: column;
-  /* overflow-y: auto; */
+  overflow-y: auto;
 }
 
 .header-row {
@@ -17,7 +17,6 @@
   align-items: center;
   justify-content: center;
   flex: 1;
-  overflow-y: auto;
 }
 
 .footer-row {
