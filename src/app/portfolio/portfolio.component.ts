@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgbAlert, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Subject } from 'rxjs';
 import { ProjectDetailsModalComponent } from './project-details-modal/project-details-modal.component';
+import { debounceTime } from 'rxjs/operators';
 
 @Component({
   selector: 'app-portfolio',
@@ -9,7 +11,7 @@ import { ProjectDetailsModalComponent } from './project-details-modal/project-de
 })
 export class PortfolioComponent implements OnInit {
 
-  projects = [
+  private projects = [
     {
       id: 1,
       title: 'PuntsPats',
@@ -23,8 +25,8 @@ export class PortfolioComponent implements OnInit {
       id: 2,
       title: 'Disarray',
       details: 'Developing a 3D fighting multiplayer game where a player can host or join a server in order to play against another' +
-      ' player. On the first version, players fight each other one against one in a martial arts manner (combat system), until one is defeated.' +
-      ' This project is also introducing me to network development.',
+        ' player. On the first version, players fight each other one against one in a martial arts manner (combat system), until one is defeated.' +
+        ' This project is also introducing me to network development.',
       technologies: 'Unity, C# and Mirror.',
       inProgress: true,
       github: 'Disarray'
@@ -47,9 +49,14 @@ export class PortfolioComponent implements OnInit {
     }
   ];
 
+  private _error: Subject<any> = new Subject<string>();
+  public errorMessage: string = '';
+  @ViewChild('selfClosingAlert', { static: false }) selfClosingAlert: NgbAlert;
+
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+    this.setupDownloadUnavailableAlert();
   }
 
   openProjectDetailsModal(projectId) {
@@ -75,4 +82,18 @@ export class PortfolioComponent implements OnInit {
     modalRef.componentInstance.projectGithub = project.github;
   }
 
+  setupDownloadUnavailableAlert() {
+    this._error.subscribe((message) => (this.errorMessage = message));
+    this._error.pipe(debounceTime(5000)).subscribe(() => {
+      if (this.selfClosingAlert) {
+        this.selfClosingAlert.close();
+      }
+    });
+  }
+
+  showDownloadUnavailableAlert() {
+    this._error.next('Download unavailable.');
+  }
+
 }
+

@@ -24,7 +24,8 @@
                 <div class="project-overlay">
                   <button type="button" class="btn btn-dark details-button" (click)="openProjectDetailsModal(2)">View
                     Details</button>
-                  <button type="button" class="btn btn-dark download-button fa fa-download"></button>
+                  <button type="button" class="btn btn-dark download-button fa fa-download"
+                    (click)="showDownloadUnavailableAlert();"></button>
                 </div>
               </div>
             </div>
@@ -52,4 +53,10 @@
     </div>
 
   </div>
+</div>
+
+<div class="unavailable-alert">
+  <ngb-alert #selfClosingAlert *ngIf="errorMessage" type="danger" (closed)="errorMessage = ''">
+    {{ errorMessage }}
+  </ngb-alert>
 </div>

@@ -70,3 +70,12 @@
   justify-content: center;
   align-items: center;
 }
+
+.unavailable-alert {
+  z-index: 1;
+  position: fixed;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
