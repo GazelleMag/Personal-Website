@@ -59,7 +59,7 @@ export class PortfolioComponent implements OnInit {
     this.setupDownloadUnavailableAlert();
   }
 
-  openProjectDetailsModal(projectId) {
+  public openProjectDetailsModal(projectId): void {
     const project = this.getProjectDetails(projectId);
     const modalRef = this.modalService.open(ProjectDetailsModalComponent, {
       centered: true,
@@ -69,11 +69,11 @@ export class PortfolioComponent implements OnInit {
     this.sendProjectDataToModal(project, modalRef);
   }
 
-  getProjectDetails(projectId) {
+  private getProjectDetails(projectId): Object {
     return this.projects.find(project => project.id === projectId);
   }
 
-  sendProjectDataToModal(project, modalRef) {
+  private sendProjectDataToModal(project, modalRef): void {
     modalRef.componentInstance.projectId = project.id;
     modalRef.componentInstance.projectTitle = project.title;
     modalRef.componentInstance.projectDetails = project.details;
@@ -82,7 +82,7 @@ export class PortfolioComponent implements OnInit {
     modalRef.componentInstance.projectGithub = project.github;
   }
 
-  setupDownloadUnavailableAlert() {
+  private setupDownloadUnavailableAlert(): void {
     this._error.subscribe((message) => (this.errorMessage = message));
     this._error.pipe(debounceTime(5000)).subscribe(() => {
       if (this.selfClosingAlert) {
@@ -91,7 +91,7 @@ export class PortfolioComponent implements OnInit {
     });
   }
 
-  showDownloadUnavailableAlert() {
+  public showDownloadUnavailableAlert(): void {
     this._error.next('Download unavailable.');
   }
 
