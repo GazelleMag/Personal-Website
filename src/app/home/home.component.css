@@ -1,13 +1,11 @@
 .introduction-row {
-  margin-top: 70px;
   text-align: center;
 }
 
 img {
-  border-radius: 50%;
-  width: 70%;
+  width: 100%;
   height: auto;
-  max-width: 225px;
+  max-width: 350px;
 }
 
 #avatar_col {
