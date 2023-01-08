@@ -1,16 +1,13 @@
+.menu-row {
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-}
-
-.header-row {
-  text-align: center;
-  align-items: center;
-}
-
-.header-col {
-  margin: 12px 0px 12px 0px;
 }
 
 .main-content-row {

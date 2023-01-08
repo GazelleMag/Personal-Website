@@ -8,7 +8,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 
 import { AppRoutingModule } from './app-routing.module';
-import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ProjectDetailsModalComponent } from './portfolio/project-details-modal/project-details-modal.component';
@@ -20,7 +19,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MenuComponent,
     HomeComponent,
     AboutMeComponent,
-    HeaderComponent,
     FooterComponent,
     PortfolioComponent,
     ProjectDetailsModalComponent
