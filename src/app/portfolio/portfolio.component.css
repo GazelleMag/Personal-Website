@@ -65,6 +65,8 @@
   width: 110px;
   height: 40px;
   margin-bottom: 5px;
+  white-space: nowrap;
+  font-size: 12px;
 }
 
 .download-button {
