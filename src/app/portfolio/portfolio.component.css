@@ -26,6 +26,12 @@
   height: 200px;
   overflow: hidden;
   border-radius: 20px;
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s;
+}
+
+.project-card:hover {
+  box-shadow: 0 0 10px rgba(33, 33, 33, 0.2)
 }
 
 .project-image {
