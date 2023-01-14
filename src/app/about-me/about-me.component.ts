@@ -9,7 +9,17 @@ export class AboutMeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  public getMyAge(): number {
+    let todayDate = new Date();
+    let birthDate = new Date('1996-04-22');
+    let age = todayDate.getFullYear() - birthDate.getFullYear();
+    let month = todayDate.getMonth() - birthDate.getMonth();
+    if (month < 0 || month === 0 && todayDate.getDate() < birthDate.getDate()) {
+      age--;
+    }
+    return age;
   }
 
 }
