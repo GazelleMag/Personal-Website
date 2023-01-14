@@ -41,7 +41,7 @@ export class PortfolioComponent implements OnInit {
     },
   ];
 
-  private _error: Subject<any> = new Subject<string>();
+  private _error: Subject<string> = new Subject<string>();
   public errorMessage: string = '';
   @ViewChild('selfClosingAlert', { static: false }) selfClosingAlert: NgbAlert;
 
@@ -76,7 +76,7 @@ export class PortfolioComponent implements OnInit {
 
   private setupDownloadUnavailableAlert(): void {
     this._error.subscribe((message) => (this.errorMessage = message));
-    this._error.pipe(debounceTime(5000)).subscribe(() => {
+    this._error.pipe(debounceTime(3500)).subscribe(() => {
       if (this.selfClosingAlert) {
         this.selfClosingAlert.close();
       }

@@ -56,7 +56,7 @@
 </div>
 
 <div class="unavailable-alert">
-  <ngb-alert #selfClosingAlert *ngIf="errorMessage" type="danger" (closed)="errorMessage = ''">
+  <ngb-alert #selfClosingAlert *ngIf="errorMessage" type="danger" [dismissible]="false" (closed)="errorMessage = ''">
     {{ errorMessage }}
   </ngb-alert>
 </div>
