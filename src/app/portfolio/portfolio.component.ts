@@ -26,7 +26,7 @@ export class PortfolioComponent implements OnInit {
       title: 'Disarray',
       details: 'Developing a 3D fighting multiplayer game where a player can host or join a server in order to play against another' +
         ' player. On the first version, players fight each other one against one in a martial arts manner (combat system), until one is defeated.' +
-        ' This project is also introducing me to network development.',
+        ' This project also introduced me to network development.',
       technologies: 'Unity, C# and Mirror.',
       inProgress: true,
       github: 'Disarray'
@@ -34,19 +34,11 @@ export class PortfolioComponent implements OnInit {
     {
       id: 3,
       title: 'Personal Website',
-      details: 'Developed my personal website that serves the purpose of promoting myself and my portfolio in a casual way.',
-      technologies: 'HTML & CSS, Bootstrap, Angular and Firebase',
+      details: 'Developed my personal website to promote myself and my portfolio in a casual way.',
+      technologies: 'HTML & CSS, Bootstrap, Angular and Firebase.',
       inProgress: false,
       github: 'Personal-Website'
     },
-    {
-      id: 4,
-      title: 'Sample Website',
-      details: 'this is the details for web development project 4',
-      technologies: '',
-      inProgress: true,
-      github: undefined
-    }
   ];
 
   private _error: Subject<any> = new Subject<string>();
