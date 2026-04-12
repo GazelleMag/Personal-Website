@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "j-magalhaes",
     "public": "dist/Personal-Website",
     "headers": [
       {
