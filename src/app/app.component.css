@@ -1,22 +1,7 @@
-.menu-row {
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.main-container {
-  display: flex;
-  flex-direction: column;
-  overflow-y: auto;
-}
-
-.main-content-row {
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-
-.footer-row {
-  justify-content: center;
-  align-items: center;
+:host {
+  display: block;
+  width: 100vw;
+  height: var(--app-viewport-height, 100vh);
+  min-height: 100vh;
+  overflow: hidden;
 }
