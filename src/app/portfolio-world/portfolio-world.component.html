@@ -15,7 +15,7 @@
 		<p class="intro-title">{{ introTitle }}</p>
 		<p class="intro-subtitle">{{ introSubtitle }}</p>
 		<div class="intro-controls-tip" aria-label="Use WASD keys to move">
-			<p class="controls-tip-line">
+			<p class="controls-tip-line" *ngIf="!showTouchJoystick">
 				<span>Use</span>
 				<span class="wasd-inline" aria-hidden="true">
 					<span class="keycap">W</span>
@@ -24,6 +24,14 @@
 					<span class="keycap">D</span>
 				</span>
 				<span>to move.</span>
+			</p>
+			<p class="controls-tip-line" *ngIf="showTouchJoystick">
+				<span>Use</span>
+				<span class="joystick-inline" aria-hidden="true">
+					<span class="joystick-inline-base"></span>
+					<span class="joystick-inline-knob"></span>
+				</span>
+				<span>the joystick to move.</span>
 			</p>
 		</div>
 
@@ -59,6 +67,7 @@
 		class="info-panel"
 		[class.info-panel-compact]="activePanelSection.id === 'cv'"
 		[class.info-panel-portfolio]="activePanelSection.id === 'portfolio'"
+		[class.info-panel-skills]="activePanelSection.id === 'skills'"
 		[style.left.px]="infoPanelScreenX"
 		[style.top.px]="infoPanelScreenY"
 		[style.opacity]="infoPanelOpacity"

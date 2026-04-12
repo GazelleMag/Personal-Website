@@ -81,6 +81,32 @@
   gap: 4px;
 }
 
+.joystick-inline {
+  position: relative;
+  display: inline-flex;
+  width: 18px;
+  height: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+.joystick-inline-base {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 243, 225, 0.64);
+  background: rgba(255, 240, 220, 0.08);
+}
+
+.joystick-inline-knob {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 243, 225, 0.72);
+  background: rgba(255, 250, 242, 0.34);
+}
+
 .keycap {
   min-width: 18px;
   height: 18px;
@@ -173,7 +199,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   width: min(560px, calc(100vw - 32px));
-  max-height: min(620px, calc(100vh - 42px));
+  max-height: min(620px, calc(var(--app-viewport-height, 100dvh) - 42px));
   padding: 0;
   border-radius: 22px;
   border: 1px solid rgba(255, 243, 224, 0.66);
@@ -216,6 +242,11 @@
 
 .info-panel.info-panel-portfolio {
   width: min(760px, calc(100vw - 28px));
+}
+
+.info-panel.info-panel-skills {
+  overflow-y: auto;
+  max-height: min(700px, calc(var(--app-viewport-height, 100dvh) - 28px));
 }
 
 .panel-header {
