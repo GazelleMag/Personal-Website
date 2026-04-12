@@ -3861,8 +3861,16 @@ export class PortfolioWorldComponent implements AfterViewInit, OnDestroy {
 
     if (this.activePanelSection) {
       const container = this.sceneContainer.nativeElement;
-      this.infoPanelScreenX = container.clientWidth * 0.5;
-      this.infoPanelScreenY = container.clientHeight * 0.5;
+      const viewport = window.visualViewport;
+      const useViewportCenter = this.showTouchJoystick && !!viewport;
+
+      if (useViewportCenter && viewport) {
+        this.infoPanelScreenX = viewport.offsetLeft + viewport.width * 0.5;
+        this.infoPanelScreenY = viewport.offsetTop + viewport.height * 0.5;
+      } else {
+        this.infoPanelScreenX = container.clientWidth * 0.5;
+        this.infoPanelScreenY = container.clientHeight * 0.5;
+      }
     }
 
     if (this.infoPanelTargetOpacity === 0 && this.infoPanelOpacity <= 0.001) {

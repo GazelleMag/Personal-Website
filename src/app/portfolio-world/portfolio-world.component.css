@@ -218,7 +218,8 @@
 
 .info-panel.info-panel-compact {
   width: min(320px, calc(100vw - 32px));
-  max-height: none;
+  max-height: min(620px, calc(var(--app-viewport-height, 100dvh) - 28px));
+  overflow-y: auto;
 }
 
 .info-panel.info-panel-compact .panel-header {
