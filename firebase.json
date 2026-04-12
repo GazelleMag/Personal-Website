@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "j-magalhaes",
-    "public": "dist/Personal-Website",
+    "public": "dist/Personal-Website/browser",
     "headers": [
       {
         "source": "/assets/CV.pdf",
